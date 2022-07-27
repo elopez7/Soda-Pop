@@ -37,6 +37,14 @@ footer {
     color: var(--secondary--color);
 }
 
+.odd{
+    
+}
+
+.even{
+    font-weight: bold;
+}
+
 main>.container {
     padding: 60px 15px 0;
     margin-bottom: 5rem;
