@@ -54,7 +54,7 @@
     <!-- ==== Main Section ==== -->
     <main class="flex-shrink-0">
         <div class="container py-5 px-5 mt-5">
-            <h2 class="border-1 border-bottom border-dark">The Code for HONDU</h2>
+            <h2 class="border-1 border-bottom border-dark">The Code for THE 300</h2>
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers data-start">
@@ -109,9 +109,38 @@
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is structured in one function.</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a C++ function that prints "Hello World" to the console.</p>
+                    <p>The Code is structured in four functions.</p>
+                    <h5>getValuesFromPage()</h5>
+                    <p>
+                        Takes the user input from the page and stores the variables in <strong>startValue</strong> and
+                        <strong>endValue</strong>
+                        then the input is converted to integer values by using <strong>parseInt()</strong>, if the input
+                        is correct then a call to <strong>generateNumbersFromStartValueToEndValues()</strong> will
+                        populate the <strong>generatedNumbers</strong> with the generated count. The array then will be
+                        passed to <strong>displayNumbers()</strong>, so that the generated values can be printed on the
+                        page.
+                    </p>
+                    <h5>generateNumbersFromStartValueToEndValues()</h5>
+                    <p>
+                        Will take the values of the <stro>startValue</stro> and <strong>endValue</strong> parameters and
+                        will use them in the <strong>for</strong> loop. A loop is used to generate the values between
+                        <strong>startValue</strong> and <strong>endValue</strong> while storing them in the
+                        <strong>generatedNumbers</strong> array.
+                    </p>
+                    <h5>displayNumbers()</h5>
+                    <p>
+                        Takes an array that contains the numbers to be displayed. A <strong>templateRow</strong> string
+                        variable is created. This string will hold the values to be displayed along with html classes
+                        that will define the ones to be shown in bold. A loop to iterate through the values stored in
+                        the <strong>numbersToDisplay</strong> array and <strong>markEvenNumbersBold()</strong> is called
+                        to decide which value will be printed in bold.
+                    </p>
+                    <h5>markEvenNumbersBold()</h5>
+                    <p>
+                        Will decide if the <strong>numberToMark</strong> parameter is even or odd. Depending on the
+                        result the html className variable will be concatenated with the value and returned as a string
+                        to be added to <strong>templateRow</strong>.
+                    </p>
                 </div>
             </div>
         </div>
