@@ -55,12 +55,11 @@
         <div class="container mt-5">
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col col-lg-4 border-end border-2">
-                    <h1>The 300: A Coding Project</h1>
+                    <h1>Soda Pop: A Coding Project</h1>
                     <h4 class="lead">
-                        Become a Spartan warrior one loop at a time!.<br>
+                        Become a Qt developer one loop at a time!.<br>
                         This is a javascript coding excercise using loops.<br>
-                        Write a program that displays the numbers from 0 to 100. Numbers that are even must be displayed
-                        in <strong>BOLD</strong>
+                        Write a short program that displays each number from 1 to 300ish. For each multiple of fizz, display "Fizz" instead of the number. For each multiple of buzz, display "Buzz" instead of the number. For numbers which are multiples of both fizz and buzz, display "FizzBuzz" instead of the number. .
                     </h4>
                     <h2 class="mt-5 border-bottom border-2">
                         Instructions
@@ -69,28 +68,7 @@
                 </div>
                 <div class="col col-lg-8">
                     <div>
-                        <h5>Enter Values</h5>
-                        <form class="row gy-2 gx-3">
-                            <div class="col">
-                                <input id="startValue" type="number" class="form-control" placeholder="Start Value"
-                                    value=0 aria-label="Start Value">
-                            </div>
-                            <div class="col">
-                                <input id="endValue" type="number" class="form-control" placeholder="End Value"
-                                value=300 aria-label="Start Value">
-                            </div>
-                            <div class="col-12 d-flex justify-content-end">
-                                <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Become a Spartan!</button>
-                            </div>
-                        </form>
-                        <h2 class="mt-5 border-bottom border-2">Results</h2>
-                        <div class="table-responsive">
-                            <table class="table table-striped table-sm">
-                                <tbody id="results">
-                                    <!--Results Go Here-->
-                                </tbody>
-                            </table>
-                        </div>
+                        <iframe src="qtApp/The300CounterApp.html" width="70.5%" height="680"></iframe>
                     </div>
                 </div>
             </div>
@@ -127,10 +105,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
         </script>
-    <script src="/js/site.js"></script>
-    <script>
-        document.getElementById("btnSubmit").addEventListener("click", getValuesFromPage);
-    </script>
 </body>
 
 </html>
